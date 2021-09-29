@@ -40,7 +40,7 @@
 
         <ul id="my-awesome-nav" class="list-inline">
 
-          <li><a data-scroll href="#casona">CASA BLANCA RESTO & GARDEN BAR</a></li>
+          <li><a data-scroll href="#casona">LA CASONA</a></li>
 
           <li><a data-scroll href="#local">El local</a></li>
 
@@ -387,7 +387,7 @@
             <?php
               include("correo.php")
             ?>
-            <form method="POST" >
+            <form method="post" action="correo.php" name="Form">
             <div class="reservas-wrapper-item-container">
             
               <div class="reservas-wrapper-item-block">
@@ -397,7 +397,7 @@
                   <label class="reservas-form">
                     <div class="label-txt">Nombre</div>
 
-                    <input type="text" class="input" name="nombre">
+                    <input type="text" class="input" name="nombre" id ="nombre">
 
                     <div class="line-box">
                       <div class="line"></div>
@@ -408,7 +408,7 @@
                   <label class="reservas-form">
                     <div class="label-txt">Telefono</div>
 
-                    <input type="text" class="input" name="telefono">
+                    <input type="text" class="input" name="telefono" id="telefono">
 
                     <div class="line-box">
                       <div class="line"></div>
@@ -419,7 +419,7 @@
                   <label class="reservas-form">
                     <div class="label-txt">Correo</div>
 
-                    <input type="text" class="input" name="correo">
+                    <input type="text" class="input" name="correo" id="correo">
 
                     <div class="line-box">
                       <div class="line"></div>
@@ -433,7 +433,7 @@
                   <label class="reservas-form">
                     <div class="label-txt">Fecha</div>
 
-                    <input type="text" class="input" name="fecha">
+                    <input type="text" class="input" name="fecha" id="fecha">
 
                     <div class="line-box">
                       <div class="line"></div>
@@ -444,7 +444,7 @@
                   <label class="reservas-form">
                     <div class="label-txt">Horario</div>
 
-                    <input type="text" class="input" name="horario">
+                    <input type="text" class="input" name="horario" id ="horario">
 
                     <div class="line-box">
                       <div class="line"></div>
@@ -455,7 +455,7 @@
                   <label class="reservas-form">
                     <div class="label-txt">Nº Personas</div>
 
-                    <input type="text" class="input" name="numPersonas">
+                    <input type="text" class="input" name="numPersonas" id="numPersonas">
 
                     <div class="line-box">
                       <div class="line"></div>
@@ -467,7 +467,7 @@
               </div>
               <div class="reservas-wrapper-block">
 
-                <button class="btn btn-reserva" type="submit" name="reservar" >Reservar</button>
+                <button class="btn btn-reserva" type="submit" name="reservar" id="reservar">Reservar</button>
                 
               </div>
 

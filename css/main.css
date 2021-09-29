@@ -1568,8 +1568,8 @@ ul.tabs li.current{
 .overlay-marco-custom {
 	z-index: 100;
   margin: 0px auto;
-  width: 90%;
-  height: 90%;
+  width: 95%;
+  height: 95%;
   border-top: 3px solid #be1c5b;
   border-bottom: 3px solid #e9bb42;
   -webkit-box-sizing: border-box;
