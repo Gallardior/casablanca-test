@@ -22,12 +22,12 @@
 <style type="text/css">
         .wp {
           position: fixed;
-          bottom: 20px;
+          bottom: 10px;
           right: 20px;
           z-index: 1000;
           }
           .wp a img {
-          width: 48px;
+          width: 80px;
           }
   </style>
   </head>
@@ -310,7 +310,6 @@
         </div>
         
       </div>
-
       <div class="section" id="eventos">
 
         <div class="eventos-container container">
@@ -360,12 +359,23 @@
                   <img src="img/eventos-08.jpg" >
               </li>
                <li>
-                  <img src="img/eventos-09.jpg" >
-              </li>
-               <li>
                   <img src="img/eventos-10.jpg" >
               </li>
-
+              <li>
+                  <img src="img/eventos-11.jpg" >
+              </li>
+              <li>
+                  <img src="img/eventos-12.jpg" >
+              </li>
+              <li>
+                  <img src="img/eventos-13.jpg" >
+              </li>
+              <li>
+                  <img src="img/eventos-14.jpg" >
+              </li>
+              <li>
+                  <img src="img/eventos-15.jpg" >
+              </li>
             
             </ul>
 
@@ -378,17 +388,26 @@
       <div class="section bg-img-cover" id="reservas">
 
         <div class="reservas-container">
+        
 
           <div class="reservas-wrapper">
-
-            <div class="reservas-wrapper-img">
-              <img class="img-fluid" src="img/reservas_icon.png">
-            </div>
+            
             <?php
               include("correo.php")
             ?>
             <form method="post" action="correo.php" name="Form">
             <div class="reservas-wrapper-item-container">
+             <div class="eventos-title">
+
+            <div class="titulos">
+
+              <span style="opacity:1">Reservas</span>
+
+            </div>
+
+            <div class="horarios-line"></div>
+            
+          </div>
             
               <div class="reservas-wrapper-item-block">
 
@@ -416,7 +435,10 @@
 
                   </label>
 
-                  <label class="reservas-form">
+                  
+                </div>
+                <div class="reservas-wrapper-item">
+                <label class="reservas-form">
                     <div class="label-txt">Correo</div>
 
                     <input type="text" class="input" name="correo" id="correo">
@@ -426,10 +448,6 @@
                     </div>
 
                   </label>
-                </div>
-
-                <div class="reservas-wrapper-item">
-
                   <label class="reservas-form">
                     <div class="label-txt">Fecha</div>
 
@@ -440,6 +458,11 @@
                     </div>
 
                   </label>
+                </div>
+
+                <div class="reservas-wrapper-item">
+
+                  
 
                   <label class="reservas-form">
                     <div class="label-txt">Horario</div>
@@ -480,7 +503,7 @@
         </div>
        
       </div>
-
+      <br><br>
       <div class="section" id="contactos">
 
         <div class="contactos-container">
@@ -571,16 +594,17 @@
      <!-- BEGIN WHATSAPP -->
       <div class="wp">
         <a target="_blank" href="https://wa.link/l2bszb">
-          <img src="img/wp.svg" alt="">
+          <img src="img/iconos_wssp.png" alt=""  >
         </a>
         <br>
-        <br>
-        <a href="https://www.facebook.com/casablanca.rgb" target="_blank">
-        <img  src="img/facebook1.svg" alt="facebook" >
+
+        <a href="https://www.facebook.com/casablanca.rgb" target="_blank" >
+        <img  src="img/iconos_fb.png" alt="facebook" >
         </a>
         <br>
-        <br>
-        <a href="https://www.instagram.com/casablanca.rgb/" target="_blank"><img  src="img/instagram1.svg" alt="instagram"></a>
+
+        <a href="https://www.instagram.com/casablanca.rgb/" target="_blank" >
+        <img  src="img/iconos_ig.png" alt="instagram"></a>
       </div>     
 
   <!-- END WHATSAPP -->

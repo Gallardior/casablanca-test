@@ -93,7 +93,7 @@ header {
 	width: 100%;
 }
 .shrink {
-    background-color: #E1C313!important;
+    background-color: #000000!important;
     border-bottom: 0 solid rgba(0,0,0,.09);
 	box-shadow: 0 0 20px 0 rgba(0,0,0,.1)!important;
 	height: 60px;
@@ -104,7 +104,7 @@ header {
     content: "";
     display: block;
     height: 18px;
-    background-image: url(../img/bg-part_6.png);
+    background-image: url(../img/bg-part_7.png);
     background-size: cover;
     background-repeat: repeat-x;
     background-position: bottom;
@@ -174,12 +174,12 @@ header {
 	margin-bottom: -6px;
 	position: absolute;
 	width: 100%;
-	background-color: #000!important;
+	background-color: #fff!important;
 	transition: all .3s ease;
 }
 
 #my-awesome-nav li.active a{
-	color:#000;
+	color:#fff;
 }
 
 #my-awesome-nav li.active a:before {
@@ -187,7 +187,7 @@ header {
 }
 
 .shrink #my-awesome-nav li a {
-	color:#000;
+	color:#fff;
 }
 .list-inline li a:hover{
 	color:#fff;
@@ -213,7 +213,7 @@ header {
     max-width: 130px !important;
 }
 .shrink .img_logo_main {
-    content: url(../img/logo-black.png);
+    content: url(../img/logo.png);
 }
 .logo{
 	display: block!important;
@@ -282,7 +282,7 @@ header {
 }
 
 .casona_inn {
-    background: url(../img/bg-ladrillos_2.new.jpg) !important;
+    background: url(../img/bg-ladrillos_2.new.png) !important;
     background-position: center !important;
     background-size: cover !important;
     align-self: inherit;
@@ -446,7 +446,7 @@ header {
 .casona-sofa{
 	position: absolute;
     right: 0;
-    top: 30%;
+    top: 20%;
    width: 200px!important;
    transition: all .3s ease;
    z-index: 1;
@@ -892,10 +892,13 @@ header {
 	background: #fff;
 	border-radius: 2px;
 	padding: 1rem;
-	display: flex;
+	display: block;
 	width: 100%;
 	flex-direction:column;
 	padding-bottom: 40px;
+	opacity:0.75;
+	align-items: center;
+	
 }
 @media screen and (min-width : 580px) {
 	.reservas-wrapper{
@@ -992,6 +995,8 @@ label {
   color: rgb(120,120,120);
   transition: all .3s ease;
   text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
 }
 .input {
   width: 100%;
@@ -1000,7 +1005,7 @@ label {
   background: transparent;
   border: none;
   outline: none;
-  font-size: 16px;
+  font-size: 20px;
   color:  #672b8c;
   font-family: 'Barlow-Regular';
 }
@@ -1047,11 +1052,12 @@ label {
     display: inline-block;
     cursor: pointer;
     color: #672b8c;
-    opacity: .8;
-    font-size: 14px !important;
+    opacity: 1;
+    font-size: 20px !important;
     padding: 5px 31px;
     text-decoration: none;
     text-transform: uppercase;
+	font-size: 18px;
 }
 .btn-reserva:hover {
     background-color: #672b8c;
@@ -1101,11 +1107,11 @@ label {
 	display: flex;
 	flex-direction:column;
 	width: 100%;
-        align-self: center;
+    align-self: center;
 }
 @media screen and (min-width : 580px) {
 	.reservas-wrapper-item-container{
-		width: 67%;
+		width: 100%;
 	}
 }
 
@@ -1114,7 +1120,7 @@ label {
 
 @media screen and (min-width: 1280px) {
 	.reservas-wrapper-item-container{
-		width: 67%;
+		width: 100%;
 	}
 
 }
@@ -1205,10 +1211,11 @@ label {
 	position: relative;
 	margin: 0 auto;
 	text-align: center;
+
 }
 
 .contactos-logo{
-	width: 180px;
+	width: 300px;
 	margin: 0 auto;
 }
 
@@ -1221,11 +1228,11 @@ label {
 }
 
 .contactos-container-info-content .horarios-info span{
-	font-size: 24px;
+	font-size: 30px;
 }
 
 .contactos-container-info-content .horarios-info .horarios-small{
-	font-size: 18px;
+	font-size: 25px;
 }
 
 .contacts-content{
@@ -1236,7 +1243,7 @@ label {
 .contacts-content {
 	display: flex;
 	color:#fff;
-	font-size: 16px;
+	font-size: 20px;
 	font-family: 'Barlow-Italic';
 	display: flex;
 	align-items: center;
@@ -1568,8 +1575,8 @@ ul.tabs li.current{
 .overlay-marco-custom {
 	z-index: 100;
   margin: 0px auto;
-  width: 95%;
-  height: 95%;
+  width: 100%;
+  height: 97%;
   border-top: 3px solid #be1c5b;
   border-bottom: 3px solid #e9bb42;
   -webkit-box-sizing: border-box;
