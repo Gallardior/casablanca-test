@@ -30,6 +30,11 @@
           width: 80px;
           }
   </style>
+
+  <!-- Principio del widget de enlace de Calendly -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<!-- Final del widget de enlace de Calendly -->
   </head>
 
   <body>
@@ -386,122 +391,13 @@
       </div>
 
       <div class="section bg-img-cover" id="reservas">
-
         <div class="reservas-container">
-        
-
           <div class="reservas-wrapper">
-            
-            <?php
-              include("correo.php")
-            ?>
-            <form method="post" action="correo.php" name="Form">
-            <div class="reservas-wrapper-item-container">
-             <div class="eventos-title">
-
-            <div class="titulos">
-
-              <span style="opacity:1">Reservas</span>
-
-            </div>
-
-            <div class="horarios-line"></div>
-            
+            <h3 class="reservas__title">RESERVAS</h3>
+            <p class="reservas__description">Todas las reservas serán recibidas hastas las 20:00 Horas</p>
+            <button class="reservas__button" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/casablancatrujillo'});return false;">Haz tu reserva aquí</button>  
           </div>
-            
-              <div class="reservas-wrapper-item-block">
-
-                <div class="reservas-wrapper-item">
-                 
-                  <label class="reservas-form">
-                    <div class="label-txt">Nombre</div>
-
-                    <input type="text" class="input" name="nombre" id ="nombre">
-
-                    <div class="line-box">
-                      <div class="line"></div>
-                    </div>
-
-                  </label>
-
-                  <label class="reservas-form">
-                    <div class="label-txt">Telefono</div>
-
-                    <input type="text" class="input" name="telefono" id="telefono">
-
-                    <div class="line-box">
-                      <div class="line"></div>
-                    </div>
-
-                  </label>
-
-                  
-                </div>
-                <div class="reservas-wrapper-item">
-                <label class="reservas-form">
-                    <div class="label-txt">Correo</div>
-
-                    <input type="text" class="input" name="correo" id="correo">
-
-                    <div class="line-box">
-                      <div class="line"></div>
-                    </div>
-
-                  </label>
-                  <label class="reservas-form">
-                    <div class="label-txt">Fecha</div>
-
-                    <input type="text" class="input" name="fecha" id="fecha">
-
-                    <div class="line-box">
-                      <div class="line"></div>
-                    </div>
-
-                  </label>
-                </div>
-
-                <div class="reservas-wrapper-item">
-
-                  
-
-                  <label class="reservas-form">
-                    <div class="label-txt">Horario</div>
-
-                    <input type="text" class="input" name="horario" id ="horario">
-
-                    <div class="line-box">
-                      <div class="line"></div>
-                    </div>
-
-                  </label>
-
-                  <label class="reservas-form">
-                    <div class="label-txt">Nº Personas</div>
-
-                    <input type="text" class="input" name="numPersonas" id="numPersonas">
-
-                    <div class="line-box">
-                      <div class="line"></div>
-                    </div>
-                  </label>
-                  
-                </div>
-
-              </div>
-              <div class="reservas-wrapper-block">
-
-                <button class="btn btn-reserva" type="submit" name="reservar" id="reservar">Reservar</button>
-                
-              </div>
-
-
-            </div> 
-            </form> 
-            
-          </div>
-
         </div>
-       
       </div>
       <br><br>
       <div class="section" id="contactos">

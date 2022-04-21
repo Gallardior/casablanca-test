@@ -134,3 +134,59 @@ ul, li {
 
 .WS-lightbox {
   display: none; }
+
+
+  .reservas-wrapper {
+    padding: 120px 5% !important;
+    background: rgba(233, 228, 225, .9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    text-align: center;
+  }
+
+  .reservas__title {
+    font-weight: 900;
+    font-size: 80px;
+    margin:  0;
+  }
+  
+  .reservas__description {
+    font-size: 24px;
+    color: #000;
+    margin:  0;
+  }
+  
+  .reservas__button {
+    padding: 20px 40px;
+    font-weight: 600;
+    font-size: 24px;
+    border-radius: 40px;
+    background-color: #FF4949;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+
+@media (max-width: 1023px) {
+  .reservas-wrapper {
+    padding: 80px 5% !important;
+    gap: 24px;
+  }
+  
+  .reservas__title {
+    font-size: 48px;
+  }
+  
+  .reservas__description {
+    font-size: 16px;
+  }
+  
+  .reservas__button {
+    padding: 16px 24px;
+    font-size: 16px;
+    border-radius: 14px;
+  }
+}
